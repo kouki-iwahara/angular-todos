@@ -1,0 +1,15 @@
+{
+  "htmlhint.options": {
+    "attr-lowercase": false,
+    // "attr-lowercase": [
+    //   "*ngIf",
+    //   "ngIf",
+    //   "*ngFor",
+    //   "ngFor",
+    //   "ngSwitch",
+    //   "[(ngModel)]",
+    //   "routerLink"
+    // ],
+    "doctype-first": false,
+},
+}
