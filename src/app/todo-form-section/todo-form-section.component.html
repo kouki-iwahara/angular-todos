@@ -1,5 +1,5 @@
 <div>
   <h2>Todoを追加する</h2>
-  <input type="text">
-  <button>追加</button>
+  <input #value type="text" [(ngModel)]="content">
+  <button (click)="addTodo()">追加</button>
 </div>

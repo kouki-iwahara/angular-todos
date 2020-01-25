@@ -1,5 +1,10 @@
+<app-todo-form-section (requestContent)="requestContent($event)"></app-todo-form-section>
 <div class="list-area">
-  <ul>
-    <li>sample-data</li>
+  <ul *ngFor="let todo of todos; index as i;">
+    <li>
+      <span>id: {{ i + 1 }}</span>
+      {{ todo.content }}
+      <button (click)="changeState(todo)">{{ todo.state }}</button>
+    </li>
   </ul>
 </div>
