@@ -22,6 +22,7 @@ export class TodosComponent implements OnInit {
 
   requestState(state: string) {
     this.radioState = state;
+    console.log('hjijds');
   }
 
 }
