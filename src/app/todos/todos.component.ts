@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Observable } from 'rxjs';
+
 import { Todo } from '../todo';
 import { TODOS } from '../mock/mock_todo';
 
@@ -9,12 +11,12 @@ import { TODOS } from '../mock/mock_todo';
   styleUrls: ['./todos.component.css']
 })
 export class TodosComponent implements OnInit {
-  todos: Todo[];
-  todoFilter: Todo[] = [];
-  radioState: string;
   constructor() {
     this.todos = TODOS;
   }
+  todos: Todo[];
+  radioState: string;
+
   ngOnInit() {
   }
 
