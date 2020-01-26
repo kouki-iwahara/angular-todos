@@ -1,10 +1,11 @@
 <app-todo-form-section (requestContent)="requestContent($event)"></app-todo-form-section>
 <div class="list-area">
-  <ul *ngFor="let todo of todos; index as i;">
+  <ul *ngFor="let todo of todoComputed(); index as i;">
     <li>
-      <span>id: {{ i + 1 }}</span>
+      <span>id: {{ todo.id }}</span>
       {{ todo.content }}
       <button (click)="changeState(todo)">{{ todo.state }}</button>
+      <button (click)="removeTodo(todo)">削除</button>
     </li>
   </ul>
 </div>
