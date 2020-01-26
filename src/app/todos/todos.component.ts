@@ -10,10 +10,16 @@ import { TODOS } from '../mock/mock_todo';
 })
 export class TodosComponent implements OnInit {
   todos: Todo[];
+  todoFilter: Todo[] = [];
+  radioState: string;
   constructor() {
     this.todos = TODOS;
   }
   ngOnInit() {
+  }
+
+  requestState(state: string) {
+    this.radioState = state;
   }
 
 }

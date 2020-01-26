@@ -1,5 +1,5 @@
 <div>
-  <input type="radio" name="state" checked>全て
-  <input type="radio" name="state" >状態
-  <input type="radio" name="state">完了
+  <input type="radio" name="state" (change)="radioStatus($event)" value="all" checked>全て
+  <input type="radio" name="state" (change)="radioStatus($event)" value="working" >作業中
+  <input type="radio" name="state" (change)="radioStatus($event)" value="complete" >完了
 </div>

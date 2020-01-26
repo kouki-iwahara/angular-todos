@@ -1,2 +1,2 @@
-<app-radio-form-section></app-radio-form-section>
-<app-todo-list [todos]="todos"></app-todo-list>
+<app-radio-form-section (requestState)="requestState($event)"></app-radio-form-section>
+<app-todo-list [todos]="todos" [radioState]="radioState"></app-todo-list>
